@@ -23,7 +23,7 @@ const Navbar =()=>{
             <div className={classes+' header_mid_outer'}>
                 <div className="header_mid_inner">
                     <div className="logo_wrap">
-                        <img src="https://pizza-restaurant.cmsmasters.net/wp-content/uploads/2016/09/logo.png" alt="Pizza Restaurant"/>
+                        <img src="./images/pizza.png" alt="Pizza"/>
                     </div>
                     <div className="mid_nav_wrap">
                         <nav>
