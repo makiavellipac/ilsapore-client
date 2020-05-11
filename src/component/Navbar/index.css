@@ -1,0 +1,97 @@
+.header_mid_outer{
+    background-color: #2E2E30;
+    width: 75%;
+    min-height: 100vh;
+}
+.header_mid_outer.active{
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 1000;
+    visibility: visible;
+}
+
+.hamburger{
+    padding: 25px;
+}
+.header_mid_inner{
+    background-color: #2E2E30;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+.mid_nav_wrap,.left_nav_wrap{
+    width: 100%;
+}
+.navigation{
+    width: 100%;
+    list-style: none;
+    padding-left: 30px;
+}
+.navigation li{
+    padding-bottom: 5px;
+}
+.nav_title{
+    font-family: 'Yanone Kaffeesatz', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.nav_tag{
+    font-family: 'Leckerli One', Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+    background-color: #fb6e36;
+    padding: 0 5px;
+    margin: 0 0 0 5px;
+    
+}
+.nav_title.shop{
+    display: flex;
+}
+.nav_title.shop span{
+    margin-left: 5px;
+}
+@media(max-width:1024px){
+    .header_mid_outer{
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: .5s;
+        visibility: hidden;
+    }
+}
+@media (min-width:768px){
+    .header_mid_outer{
+        width: 25%;
+    }
+}
+@media(min-width:1024px){
+    .header_mid_outer{
+        background-color: #2E2E30;
+        width: 100%;
+        min-height: 50px;
+    }
+    .header_mid_inner{
+        flex-direction: inherit;
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .mid_nav,.left_nav{
+        flex-direction: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .hamburger{
+        visibility: hidden;
+        position: absolute;
+    }
+    .logo_wrap img{
+        width: 100%;
+        padding-left: 25px;
+    }
+}
+
+/* .menu-primary-navigation-container{
+    border: 1px solid #fff;   
+} */
